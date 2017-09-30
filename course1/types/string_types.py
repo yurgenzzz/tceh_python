@@ -2,9 +2,13 @@
 print("This is a string.")
 print('This is also a string.')
 
+print("'")
+print('a' == 'a')
+print('a' == 'b')
 print('We are equal' == "We are equal")
 
-print('Я русская строка.')
+
+print('Я русская строка.')  # only Python 3.x
 
 print("""
 This string contains multiline
@@ -12,7 +16,7 @@ This string contains multiline
 """)
 
 
-
+print('\n')
 
 
 
@@ -34,7 +38,14 @@ print(str(None), str(True), str(False), str(object))
 
 # String operations:
 print('123' + '456')  # but it is impossiable to '123' - '3'
+print('wiki' + 'media' == 'media' + 'wiki')
+
+print('a' < 'b')
+print('ab' < 'ba')
+
 print('4' * 4)
+
+
 
 print('Chars'[0], '123'[1], 'abc'[-1])
 
@@ -47,9 +58,12 @@ print('100' in '200')
 print('I am not there' not in 'String')
 
 
-# String format:
-print('Hello, {}. You are learning {}'.format('Nikita', 'Python'))
-
-
 # String length:
 print(len('7 chars'))
+
+
+
+# String format:
+print('Hello, {}. You are learning {}'.format('Nikita', 'Python'))
+print('Hello, {}. You are learning {}'.format('Nikita'))
+print('Hello, {}. You are learning'.format('Nikita', 'Python'))

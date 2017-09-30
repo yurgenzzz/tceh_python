@@ -20,6 +20,23 @@ print('1j * 1j = ', 1j * 1j)  # 1j = sqrt(-1)
 
 
 
+# opeartions priority
+print('2 + 2 * 2 = ', 2 + 2 * 2)
+print('(2 + 2) * 2 = ', (2 + 2) * 2)
+print('(2+2)*2 = ', (2+2)*2)
+
+# with whitespace in the beginning
+"""
+>>> 1 + 1
+"""
+
+
+
+
+
+
+
+
 
 # overfloating int:
 import sys  # importing the standart library `sys`.
