@@ -3,9 +3,9 @@ from werkzeug.routing import BaseConverter
 app = Flask(__name__)
 
 
-@app.route('/<path:user_name>')
-def home(user_name):
-    return 'hello user! {}'.format(user_name)
+@app.route('/')
+def home():
+    return 'hello world!'
 
 
 
@@ -32,5 +32,6 @@ if __name__ == '__main__':
 
 
 # @app.route('/<user>')
+# @app.route('/<path:user_name>')
 # def username(user):
 #     return 'hello, user: ' + user
