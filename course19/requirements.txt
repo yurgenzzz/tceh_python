@@ -1,0 +1,5 @@
+Django>=2.0
+django-debug-toolbar
+pytz
+sqlparse
+wheel
