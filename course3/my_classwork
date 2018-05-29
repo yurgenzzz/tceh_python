@@ -1,0 +1,43 @@
+#1 Написать функцию, кторая выбрасывает одно из трех исключений: ValueError, TypeError, RuntimeError случайным образом. В месте вызова функции обрабатывается все 3 исключения.
+import random
+def osome_error():
+    x = random.randint(1, 3)
+    if x == 1:
+        raise ValueError('ValueError')
+    elif x == 2:
+        raise TypeError('TypeError')
+    else:
+        raise RuntimeError('RuntimeError')
+    return
+ 
+try:
+    osome_error()
+except (ValueError, TypeError, RuntimeError) as err:
+    print('Поймана ошибка: ', err)
+ 
+
+
+#2 Написать функцию, которая принимает на вход список, если в списке все объекты int сортирует его. Иначе выбрасывают ValueError.
+def test(*num):
+    a = list()
+    for x in num:
+        if type(x) is int:
+            a.append(x)
+        else:
+            raise ValueError('Неверный тип данных')
+            break
+    print(sorted(a))
+
+
+
+#3 Написать функцию, которая принимает словарь, преобразует все ключи словаря к строкам и возвращает новый словарь
+def keys_to_str(x):
+    y = {}
+    for key, value in x.items():
+        y.update({str(key):value})
+    return(y)
+
+
+
+#4 
+ 
